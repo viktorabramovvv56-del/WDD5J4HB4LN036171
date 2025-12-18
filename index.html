@@ -30,7 +30,7 @@ body {
   background-image: url('stripe.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; /* DESKTOP */
+  background-size: cover; /* 💻 desktop */
 
   display: flex;
   justify-content: center;
@@ -92,7 +92,7 @@ h1 {
   height: auto;
 }
 
-/* ===== MOBILE ===== */
+/* ===== 📱 MOBILE — БЕЗ ПУСТОТ СВЕРХУ/СНИЗУ ===== */
 @media (max-width: 600px) {
 
   body {
@@ -100,7 +100,8 @@ h1 {
   }
 
   .page {
-    background-size: contain; /* 👈 КЛЮЧ: НИЧЕГО НЕ ОБРЕЗАЕТСЯ */
+    background-size: auto 100%;   /* 👈 ЗАПОЛНЯЕМ ПО ВЫСОТЕ */
+    background-position: center top;
   }
 
   .separator {
