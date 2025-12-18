@@ -16,29 +16,30 @@ body {
   font-family: 'Source Serif 4', serif;
 }
 
-/* Центральный блок с фоновой полоской */
+/* Центральный блок с фоновой картинкой */
 .page {
   max-width: 800px;
   margin: auto;
   border: 1px solid #cfcfcf;
 
-  /* КАРТИНКА-ПОЛОСКА */
+  /* КАРТИНКА НА ВЕСЬ БЛОК */
   background-image: url('stripe.png');
   background-repeat: no-repeat;
-  background-position: left top;
-  background-size: auto 100%;
+  background-position: center center;
+  background-size: cover; /* растягиваем по ширине и высоте */
 
-  /* Центрирование контента */
   display: flex;
   justify-content: center;
 }
 
 /* Контент поверх картинки */
 .content {
-  background: rgba(255, 255, 255, 0.92); /* полупрозрачный белый фон */
-  padding: 50px 40px;
   width: 100%;
+  padding: 50px 40px;
   text-align: center;
+
+  /* лёгкая подложка для читаемости */
+  background: rgba(255, 255, 255, 0.9);
 }
 
 /* Логотип */
@@ -53,7 +54,7 @@ h1 {
   margin-bottom: 25px;
 }
 
-/* Инфо-блоки */
+/* Информационные блоки */
 .block {
   margin-bottom: 18px;
   font-size: 17px;
