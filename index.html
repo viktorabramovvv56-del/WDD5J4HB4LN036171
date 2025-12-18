@@ -14,6 +14,7 @@ body {
   margin: 0;
   padding: 30px;
   font-family: 'Source Serif 4', serif;
+  position: relative;
 }
 
 .page {
@@ -64,6 +65,15 @@ h1 {
   height: auto;
 }
 
+/* Картинка в левом нижнем углу */
+.bottom-left-img {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  max-width: 40px;
+  height: auto;
+}
+
 /* Мобильная адаптация */
 @media (max-width: 600px) {
   .page {
@@ -80,6 +90,11 @@ h1 {
   }
   .footer img {
     max-width: 16px;
+  }
+  .bottom-left-img {
+    max-width: 30px;
+    left: 10px;
+    bottom: 10px;
   }
 }
 </style>
@@ -135,6 +150,9 @@ h1 {
   </div>
 
 </div>
+
+<!-- Картинка в левом нижнем углу -->
+<img class="bottom-left-img" src="info-icon.png" alt="Инфо">
 
 </body>
 </html>
