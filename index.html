@@ -9,7 +9,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
-/* БАЗА */
 * {
   box-sizing: border-box;
 }
@@ -21,7 +20,7 @@ body {
   font-family: 'Source Serif 4', serif;
 }
 
-/* ЦЕНТРАЛЬНЫЙ БЛОК */
+/* ===== PAGE ===== */
 .page {
   max-width: 800px;
   width: 100%;
@@ -31,13 +30,13 @@ body {
   background-image: url('stripe.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain; /* 👈 ключевое исправление */
+  background-size: cover; /* DESKTOP */
 
   display: flex;
   justify-content: center;
 }
 
-/* КОНТЕНТ */
+/* ===== CONTENT ===== */
 .content {
   width: 100%;
   padding: clamp(24px, 4vw, 48px);
@@ -45,21 +44,20 @@ body {
   background: rgba(255, 255, 255, 0.9);
 }
 
-/* ЛОГОТИП */
+/* ===== LOGO ===== */
 .logo img {
   width: 100%;
-  max-width: 140px; /* ~20% меньше */
+  max-width: 140px;
   height: auto;
   margin-bottom: 24px;
 }
 
-/* ЗАГОЛОВОК */
+/* ===== TEXT ===== */
 h1 {
   font-size: clamp(18px, 2.5vw, 22px);
   margin-bottom: 22px;
 }
 
-/* ИНФО-БЛОКИ */
 .block {
   font-size: clamp(15px, 2.2vw, 17px);
   margin-bottom: 16px;
@@ -69,7 +67,7 @@ h1 {
   font-weight: 600;
 }
 
-/* РАЗДЕЛИТЕЛИ */
+/* ===== SEPARATOR ===== */
 .separator {
   width: 50%;
   max-width: 260px;
@@ -77,7 +75,7 @@ h1 {
   border-top: 1px solid #cccccc;
 }
 
-/* ФУТЕР */
+/* ===== FOOTER ===== */
 .footer {
   margin-top: 30px;
   font-size: 14px;
@@ -94,10 +92,15 @@ h1 {
   height: auto;
 }
 
-/* МОБИЛЬНЫЕ УСТРОЙСТВА */
-@media (max-width: 480px) {
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+
   body {
     padding: 8px;
+  }
+
+  .page {
+    background-size: contain; /* 👈 КЛЮЧ: НИЧЕГО НЕ ОБРЕЗАЕТСЯ */
   }
 
   .separator {
