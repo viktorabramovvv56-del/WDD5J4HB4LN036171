@@ -22,11 +22,10 @@ body {
   margin: auto;
   border: 1px solid #cfcfcf;
 
-  /* КАРТИНКА НА ВЕСЬ БЛОК */
   background-image: url('stripe.png');
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover; /* растягиваем по ширине и высоте */
+  background-size: cover;
 
   display: flex;
   justify-content: center;
@@ -37,8 +36,6 @@ body {
   width: 100%;
   padding: 50px 40px;
   text-align: center;
-
-  /* лёгкая подложка для читаемости */
   background: rgba(255, 255, 255, 0.9);
 }
 
@@ -64,8 +61,10 @@ h1 {
   font-weight: 600;
 }
 
+/* 🔹 УКОРОЧЕННЫЕ ПОЛОСКИ */
 .separator {
-  margin: 30px 0;
+  margin: 30px auto;
+  width: 50%;            /* было 100% */
   border-top: 1px solid #cccccc;
 }
 
@@ -80,8 +79,9 @@ h1 {
   gap: 10px;
 }
 
+/* 🔹 КАРТИНКА В ФУТЕРЕ −15% */
 .footer img {
-  max-width: 400px;
+  max-width: 340px;      /* было 400px */
 }
 
 /* Мобильная адаптация */
@@ -91,6 +91,9 @@ h1 {
   }
   h1 {
     font-size: 20px;
+  }
+  .footer img {
+    max-width: 200px;
   }
 }
 </style>
