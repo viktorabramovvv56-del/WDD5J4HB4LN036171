@@ -16,29 +16,28 @@ body {
   font-family: 'Source Serif 4', serif;
 }
 
-/* Центральный блок */
+/* Центральный блок с фоновой полоской */
 .page {
   max-width: 800px;
   margin: auto;
-  background: #ffffff;
   border: 1px solid #cfcfcf;
-  display: flex;
-}
 
-/* ВЕРТИКАЛЬНАЯ ПОЛОСКА СЛЕВА */
-.stripe {
-  width: 60px;
+  /* КАРТИНКА-ПОЛОСКА */
   background-image: url('stripe.png');
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  opacity: 0.4; /* СДЕЛАЛ ВИДИМОЙ */
+  background-position: left top;
+  background-size: auto 100%;
+
+  /* Центрирование контента */
+  display: flex;
+  justify-content: center;
 }
 
-/* Основной контент */
+/* Контент поверх картинки */
 .content {
-  flex: 1;
+  background: rgba(255, 255, 255, 0.92); /* полупрозрачный белый фон */
   padding: 50px 40px;
+  width: 100%;
   text-align: center;
 }
 
@@ -54,7 +53,7 @@ h1 {
   margin-bottom: 25px;
 }
 
-/* Информационные блоки */
+/* Инфо-блоки */
 .block {
   margin-bottom: 18px;
   font-size: 17px;
@@ -89,9 +88,6 @@ h1 {
   .content {
     padding: 30px 20px;
   }
-  .stripe {
-    width: 35px;
-  }
   h1 {
     font-size: 20px;
   }
@@ -102,9 +98,6 @@ h1 {
 <body>
 
 <div class="page">
-
-  <div class="stripe"></div>
-
   <div class="content">
 
     <div class="logo">
