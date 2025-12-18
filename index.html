@@ -57,7 +57,7 @@ h1 {
   color: #555;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-start; /* выровнять текст рядом с печатью */
   gap: 10px;
   position: relative;
 }
@@ -66,7 +66,7 @@ h1 {
   position: absolute;
   bottom: 0;
   left: 0;
-  max-width: 2000px; /* увеличили в 2 раза относительно 1000px */
+  max-width: 1000px; /* увеличили в 10 раз */
   height: auto;
   opacity: 0.7; /* слегка прозрачная печать */
   z-index: -1; /* чтобы текст был сверху */
@@ -84,7 +84,7 @@ h1 {
     font-size: 16px;
   }
   .footer img {
-    max-width: 320px; /* увеличено в 2 раза относительно 160px */
+    max-width: 160px; /* увеличено в 10 раз от 16px */
   }
 }
 </style>
