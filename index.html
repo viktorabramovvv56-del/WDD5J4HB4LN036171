@@ -23,7 +23,6 @@ body {
   padding: 50px 40px;
   border: 1px solid #cfcfcf;
   text-align: center;
-  position: relative; /* Для абсолютного позиционирования печати */
 }
 
 .logo img {
@@ -50,26 +49,19 @@ h1 {
   border-top: 1px solid #cccccc;
 }
 
-/* Футер как печать */
 .footer {
   margin-top: 35px;
   font-size: 14px;
   color: #555;
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* выровнять текст рядом с печатью */
-  gap: 10px;
-  position: relative;
+  justify-content: center;
+  gap: 10px; /* Расстояние между картинкой и текстом */
 }
 
 .footer img {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   max-width: 1000px; /* увеличили в 10 раз */
   height: auto;
-  opacity: 0.7; /* слегка прозрачная печать */
-  z-index: -1; /* чтобы текст был сверху */
 }
 
 /* Мобильная адаптация */
@@ -82,6 +74,9 @@ h1 {
   }
   .block {
     font-size: 16px;
+  }
+  .footer {
+    gap: 5px;
   }
   .footer img {
     max-width: 160px; /* увеличено в 10 раз от 16px */
@@ -135,7 +130,7 @@ h1 {
   </div>
 
   <div class="footer">
-    <img src="info-icon.png" alt="Печать">
+    <img src="info-icon.png" alt="Инфо">
     <span>Информация предоставлена в электронном виде</span>
   </div>
 
