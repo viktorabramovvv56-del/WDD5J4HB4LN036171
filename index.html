@@ -2,13 +2,10 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-
-<!-- Мобильная адаптация -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Официальная информация</title>
+<title>Таможенный терминал «Бенякони»</title>
 
-<!-- Строгий официальный шрифт -->
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
@@ -20,87 +17,54 @@ body {
 }
 
 .page {
-  max-width: 850px;
+  max-width: 800px;
   margin: auto;
   background: #ffffff;
-  padding: 50px 60px;
-  border: 1px solid #d0d0d0;
-}
-
-.header {
+  padding: 50px 40px;
+  border: 1px solid #cfcfcf;
   text-align: center;
-  margin-bottom: 40px;
 }
 
-.header h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  letter-spacing: 0.5px;
-}
-
-.header p {
-  font-size: 14px;
-  color: #555;
-}
-
-.section {
+.logo img {
+  max-width: 180px;
   margin-bottom: 30px;
 }
 
-.section-title {
+h1 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.block {
+  margin-bottom: 18px;
+  font-size: 17px;
+}
+
+.block strong {
   font-weight: 600;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 5px;
 }
 
-p {
-  text-align: justify;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.pdf-link {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 14px 20px;
-  border: 1px solid #000;
-  text-decoration: none;
-  color: #000;
-  font-size: 16px;
+.separator {
+  margin: 30px 0;
+  border-top: 1px solid #cccccc;
 }
 
 .footer {
-  margin-top: 50px;
+  margin-top: 35px;
   font-size: 14px;
   color: #555;
-  border-top: 1px solid #ccc;
-  padding-top: 15px;
 }
 
-/* ===== МОБИЛЬНАЯ АДАПТАЦИЯ ===== */
-@media (max-width: 768px) {
-
-  body {
-    padding: 15px;
-  }
-
+/* Мобильная адаптация */
+@media (max-width: 600px) {
   .page {
     padding: 30px 20px;
   }
-
-  .header h1 {
+  h1 {
     font-size: 20px;
   }
-
-  p {
-    font-size: 15px;
-  }
-
-  .pdf-link {
-    width: 100%;
-    text-align: center;
-    box-sizing: border-box;
+  .block {
+    font-size: 16px;
   }
 }
 </style>
@@ -110,30 +74,48 @@ p {
 
 <div class="page">
 
-  <div class="header">
-    <h1>ОФИЦИАЛЬНОЕ УВЕДОМЛЕНИЕ</h1>
-    <p>Дата публикации: 18.12.2025</p>
+  <div class="logo">
+    <img src="emblem.png" alt="Герб">
   </div>
 
-  <div class="section">
-    <div class="section-title">Общая информация</div>
-    <p>
-      ЗДЕСЬ РАЗМЕЩАЕТСЯ ОФИЦИАЛЬНЫЙ ТЕКСТ.  
-      Он может быть любого объёма, с абзацами и формулировками,
-      и будет корректно отображаться как на компьютере,
-      так и на мобильных устройствах.
-    </p>
+  <h1>Таможенный терминал «Бенякони»</h1>
+
+  <div class="block">
+    <strong>Ваш номер очереди:</strong><br>
+    8
   </div>
 
-  <div class="section">
-    <div class="section-title">Документы</div>
-    <a class="pdf-link" href="document.pdf" target="_blank">
-      📄 Официальный документ (PDF)
-    </a>
+  <div class="block">
+    <strong>Перед вами:</strong><br>
+    7
+  </div>
+
+  <div class="separator"></div>
+
+  <div class="block">
+    <strong>Зарегистрирован:</strong><br>
+    8:13 / 18.12.2025
+  </div>
+
+  <div class="block">
+    <strong>Зарезервированное время:</strong><br>
+    11:30 / 18.12.2025
+  </div>
+
+  <div class="separator"></div>
+
+  <div class="block">
+    <strong>Товар:</strong><br>
+    Mercedes-Benz CLA 250
+  </div>
+
+  <div class="block">
+    <strong>Описание:</strong><br>
+    WDD5J4HB4LN036171
   </div>
 
   <div class="footer">
-    Настоящая информация предоставлена для ознакомления.
+    Информация предоставлена в электронном виде
   </div>
 
 </div>
